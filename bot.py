@@ -22,7 +22,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
 
-__version__ = '2.12.2'
+__version__ = '2.12.3'
 
 import asyncio
 from datetime import datetime
@@ -636,7 +636,7 @@ class ModmailBot(Bot):
             return
 
         if self.self_hosted and not self.config.get('github_access_token'):
-            print('Github access token not found.')
+            print('GitHub access token not found.')
             print('Autoupdates disabled.')
             print(LINE)
             return
